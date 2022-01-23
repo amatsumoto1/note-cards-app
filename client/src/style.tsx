@@ -5,6 +5,7 @@ const GlobalStyle = createGlobalStyle`
     margin: 0;
     min-height: 100vh;
     width: 100vw;
+    font-size: 16px;
   }
 `;
 
