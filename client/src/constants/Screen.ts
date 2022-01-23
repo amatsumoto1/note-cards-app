@@ -1,0 +1,8 @@
+export const MAX_XS_SCREEN_SIZE = 319;
+export const MIN_SM_SCREEN_SIZE = MAX_XS_SCREEN_SIZE + 1;
+export const MAX_SM_SCREEN_SIZE = 480;
+export const MIN_MD_SCREEN_SIZE = MAX_SM_SCREEN_SIZE + 1;
+export const MAX_MD_SCREEN_SIZE = 768;
+export const MIN_LG_SCREEN_SIZE = MAX_MD_SCREEN_SIZE + 1;
+export const MAX_LG_SCREEN_SIZE = 1024;
+export const MIN_XL_SCREEN_SIZE = MAX_LG_SCREEN_SIZE + 1;
