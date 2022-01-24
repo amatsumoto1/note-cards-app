@@ -4,6 +4,7 @@ import PageWrapper from './components/PageWrapper';
 
 const Home = lazy(() => import('./pages/Home'));
 const Login = lazy(() => import('./pages/Login'));
+const NotFound = lazy(() => import('./pages/NotFound'));
 
 const App: React.VFC = () => {
   return (
@@ -13,6 +14,7 @@ const App: React.VFC = () => {
           <Routes>
             <Route path='/' element={ <Home /> } />
             <Route path='/login' element={ <Login /> } />
+            <Route path='*' element={ <NotFound /> } />
           </Routes>
         </Suspense>
       </PageWrapper>

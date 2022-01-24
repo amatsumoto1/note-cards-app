@@ -1,11 +1,17 @@
 import React from 'react';
-import { MainContainer } from './style';
+import { MainContainer, MainHeader, MainSubheader } from './style';
 import ImageCarosel from '../../../components/ImageCarosel';
 
 const MainContent: React.VFC = () => {
   return (
     <MainContainer>
-      <ImageCarosel />
+      <MainHeader>
+        Flashcards Application
+      </MainHeader>
+      <MainSubheader>
+        Quiz yourself and manage your own notes.
+      </MainSubheader>
+      <ImageCarosel flex={1} />
     </MainContainer>
   );
 }

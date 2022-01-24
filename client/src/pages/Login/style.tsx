@@ -1,20 +1,15 @@
 import styled from 'styled-components';
-import { Flex } from '../../components/Styles/Flexbox';
+import { FlexCenter } from '../../components/Styles/Flexbox';
 import { CenteredFullHeader } from '../../components/Styles/Header';
 
-const LOGIN_HEADER_FONT_SIZE = '2.5rem';
-const LOGIN_SUBHEADER_FONT_SIZE = '2.1rem';
+const LOGIN_HEADER_FONT_SIZE = '2rem';
 
-export const LoginWrapper = styled(Flex).attrs({as: 'main'})`
+export const LoginWrapper = styled(FlexCenter).attrs({as: 'main'})`
 `;
 LoginWrapper.displayName = 'LoginWrapper';
 
 export const LoginHeader = styled(CenteredFullHeader)`
+  margin: 2rem 0 0.5rem;
   font-size: ${LOGIN_HEADER_FONT_SIZE};
 `;
-LoginHeader.displayName = LoginHeader.name;
-
-export const LoginSubheader = styled(CenteredFullHeader).attrs({as: 'h2'})`
-  font-size: ${LOGIN_SUBHEADER_FONT_SIZE};
-`;
-LoginSubheader.displayName = LoginSubheader.name;
+LoginHeader.displayName = 'LoginHeader';
