@@ -10,7 +10,7 @@ export const HeaderContainer = styled.header`
   width: 100vw;
   z-index: 100;
   height: ${HEADER_HEIGHT};
-  background-color: ${props => props.theme.backgroundColors.header};
-  color: ${props => props.theme.colors.header}
+  color: ${({theme}) => theme.colors.headerMain};
+  background-color: ${({theme}) => theme.colors.headerSecondary};
 `;
 HeaderContainer.displayName = 'HeaderContainer';

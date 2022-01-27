@@ -1,11 +1,18 @@
-export const baseTheme = {
-  backgroundColors: {
-    header: '#121212',
-    footer: '#121212'
-  },
+import { DefaultTheme } from 'styled-components';
+
+export const baseTheme: DefaultTheme = {
+  name: 'default',
   colors: {
-    header: '#eee',
-    footer: '#eee',
-    shadow: '#000000'
+    main: '#000000',
+    secondary: '#000000',
+    headerMain: '#eee',
+    headerSecondary: '#121212',
+    headerLink: '#eee',
+    headerActiveLink: '#eee',
+    footerMain: '#eee',
+    footerSecondary: '#121212',
+    borderDark: '#000000',
+    borderLight: '#000000',
+    shadowDark: '#000000'
   }
 }

@@ -9,7 +9,7 @@ export const FooterContainer = styled.footer`
   bottom: 0;
   width: 100vw;
   height: ${FOOTER_HEIGHT};
-  background-color: ${props => props.theme.backgroundColors.footer};
-  color: ${props => props.theme.colors.footer};
+  background-color: ${({theme}) => theme.colors.footerSecondary};
+  color: ${({theme}) => theme.colors.footerMain};
 `;
 FooterContainer.displayName = 'FooterContainer';

@@ -7,6 +7,7 @@ export const LoginFormCard = styled(FlexCenter)`
   padding: 1rem 0.5rem;
   margin-top: 2rem;
   min-width: 25rem;
+  border-radius: 5px;
 `;
 LoginFormCard.displayName = 'LoginFormCard';
 
@@ -30,5 +31,6 @@ LoginFormContainer.displayName = 'LoginFormContainer';
 export const LoginFormRow = styled(Flex)`
   width: 100%;
   padding: 1rem 0.5rem;
+  box-sizing: border-box;
 `;
 LoginFormRow.displayName = 'LoginFormRow';

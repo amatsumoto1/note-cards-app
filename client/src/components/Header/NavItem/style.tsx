@@ -7,7 +7,7 @@ NavItemContainer.displayName='NavItemContainer';
 
 export const NavItemLink = styled(NavLink)`
   text-decoration: none;
-  color: ${props => props.theme.colors.header};
+  color: ${({theme}) => theme.colors.headerLink};
   padding: 0 1rem;
 `;
 NavItemContainer.displayName='NavItemLink';
