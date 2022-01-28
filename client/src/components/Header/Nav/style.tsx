@@ -16,14 +16,20 @@ export const NavContainer = styled.nav`
 `;
 NavContainer.displayName = 'NavContainer';
 
+
 export const NavItemList = styled(NoBulletList)`
   flex: 1;
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  padding-inline-start: 0;
-  margin-block-start: 0;
-  margin-block-end: 0;
   margin-left: 2rem;
 `;
 NavItemList.displayName = 'NavItemList';
+
+
+export const NavItemRightList = styled(NoBulletList)`
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+`;
+NavItemRightList.displayName = 'NavItemRightList';

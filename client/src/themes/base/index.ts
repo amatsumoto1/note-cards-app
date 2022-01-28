@@ -14,5 +14,8 @@ export const baseTheme: DefaultTheme = {
     borderDark: '#000000',
     borderLight: '#000000',
     shadowDark: '#000000'
+  },
+  borderRadius: {
+    input: '3px'
   }
 }

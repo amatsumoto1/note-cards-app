@@ -2,7 +2,7 @@ import 'styled-components';
 
 declare module 'styled-components' {
   export interface DefaultTheme {
-    name: string,
+    name: string;
     colors: {
       main: string;
       secondary: string;
@@ -16,5 +16,8 @@ declare module 'styled-components' {
       borderLight: string;
       shadowDark: string;
     };
+    borderRadius: {
+      input: string;
+    }
   }
 }

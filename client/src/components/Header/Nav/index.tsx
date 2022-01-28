@@ -1,5 +1,5 @@
 import React from 'react';
-import { NavContainer, NavItemList } from './style';
+import { NavContainer, NavItemList, NavItemRightList } from './style';
 import Logo from '../Logo';
 import NavItem from '../NavItem';
 
@@ -15,6 +15,11 @@ const Nav: React.VFC = () => {
           About
         </NavItem>
       </NavItemList>
+      <NavItemRightList>
+        <NavItem path='/login'>
+          Login
+        </NavItem>
+      </NavItemRightList>
     </NavContainer>
   )
 }

@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-type FlexDirection = 'column' | 'row';
+type FlexDirection = 'column' | 'row' | 'column-reverse' | 'row-reverse';
 
 type FlexProps = {
   flexDirection?: FlexDirection
@@ -8,7 +8,7 @@ type FlexProps = {
 
 export const Flex = styled.div<FlexProps>`
   display: flex;
-  flex-direction: ${props => props.flexDirection};
+  flex-direction: ${({ flexDirection }) => flexDirection};
 `;
 Flex.displayName = 'Flex';
 
@@ -28,7 +28,7 @@ type FlexGrowProps = {
 }
 
 export const FlexGrow = styled.div<FlexGrowProps>`
-  flex-grow: ${props => props.flexGrow}
+  flex-grow: ${({ flexGrow }) => flexGrow}
 `;
 FlexGrow.displayName = 'FlexGrow';
 

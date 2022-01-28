@@ -54,6 +54,9 @@ const LoginForm: React.VFC = () => {
             placeholder='Enter Password'
           />
         </LoginFormRow>
+        <LoginFormRow>
+          
+        </LoginFormRow>
       </LoginFormContainer>
     </LoginFormCard>
   )
